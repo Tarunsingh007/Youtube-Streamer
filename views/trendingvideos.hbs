@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/stylesheets/css/bootstrap.min.css">
+<div style="background-image:url('https://images.pexels.com/photos/1389099/pexels-photo-1389099.jpeg?cs=srgb&dl=arrangement-candle-decoration-1389099.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;;
+    ">
+<center><h1 style="color:#f1f1f1">Your Videos</h1></center>
+{{#each trendingvideos}}
+  <div class="container">
+  	<h3 style="color:#888">Title: </h3><h4 style="color:#f1f1f1"><u>{{this.title}}</u></h4>
+  	<h3 style="color:#888">Video: </h3>
+  	<div class="container-sm"><iframe width="100%" height="200" src="{{this.clink}}"></iframe></div>
+  </div>
+  <br><hr>
+{{/each}}
+</div>
+
+<script type="text/javascript">
+	function onclick({
+		windows.open()
+	});
+</script>

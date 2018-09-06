@@ -23,6 +23,13 @@ app.post('/search',(req,res,next)=>{
 			res.render('result',{youtube});
 		});
 });
+app.post('/trending',(req,res,next)=>{
+	scraper
+		.trending()
+		.then(trendingvideos=>{
+			res.render('trendingvideos',{trendingvideos});
+		});
+});
 // open("www.youtube.com/watch?v=Gv_XBMrPvRw","vlc");
 app.listen(3000,(err)=>{
 	if(err)
