@@ -4,6 +4,7 @@ const express=require('express'),
 	  hbs=require('hbs'),
 	  path=require('path'),
 	  scraper=require('./scraper.js'),
+	  port=process.env.PORT || 3000,
 	  bodyParser=require('body-parser');
 
 	  app.use(bodyParser());
@@ -31,7 +32,7 @@ app.post('/trending',(req,res,next)=>{
 		});
 });
 // open("www.youtube.com/watch?v=Gv_XBMrPvRw","vlc");
-app.listen(3000,(err)=>{
+app.listen(port,(err)=>{
 	if(err)
 		return err;
 	else
