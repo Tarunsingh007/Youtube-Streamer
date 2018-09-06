@@ -2,7 +2,7 @@
 
 A youtube streamer to fetch and play videos of youtube on Localhost.
 
-#Usage
+# Usage
 
 =>Install node and npm.
 =>navigate to file location via cmd and type "npm install".
